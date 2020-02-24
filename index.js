@@ -15,7 +15,6 @@ const returnLastTwoDrivers = function(array_of_drivers) {
   return newArray;
 }
 
-
 function createFareMultiplier(integer) {
     return function(fare) {
         return fare*integer;
@@ -34,6 +33,6 @@ function selectDifferentDrivers(array_of_drivers, drivers) {
   return drivers(array_of_drivers);
 }
 
-let selectingDrivers = [];
-selectingDrivers.push(returnFirstTwoDrivers)
-selectingDrivers.push(returnLastTwoDrivers);
+let selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
+
+
